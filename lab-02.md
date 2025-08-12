@@ -57,13 +57,44 @@ _Sample Execution_
 Write a program to input 2 numbers and print the one that is higher. 
 
 ```c
+#include<stdio.h>
 
+int main()
+{
+    int a, b;
+    printf("Enter 2 numbers: ");
+    scanf("%d %d", &a, &b);
+    //This can be done either by ternary operator or by if-else 
+    //(a>b)?printf("%d is bigger", a):printf("%d is bigger", b); 
+    if(a>b)
+    {
+        printf("%d is bigger", a);
+    }
+    else
+    {
+        printf("%d is bigger", b);
+    }
+    return 0;
+}
 ```
 
 ### Task 2
 Write a program to print 100 to 1 with space in between them.
 
 ```c
+#include<stdio.h>
+
+int main()
+{
+    int a=100;
+    while(a>0)
+    {
+        printf("%d ", a);
+        a--;
+    }
+
+    return 0;
+}
 
 ```
 
@@ -72,6 +103,24 @@ Write a program to print 100 to 1 with space in between them.
 Write a program to add the digits of a number.
 
 ```c
+#include<stdio.h>
+
+int main()
+{
+    int n, sum=0;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    while(n>0)
+    {
+        sum+=n%10; 
+        n/=10; 
+        //same outcome is possible without using compound assignment. To do that use the following 2 lines of code
+        //sum=sum+n%10;
+        //n=n/10;
+    }
+    printf("The sum of the digits of this number is: %d", sum);
+    return 0;
+}
 
 ```
 
@@ -80,12 +129,41 @@ Write a program to add the digits of a number.
 Write a program to reverse a number.
 
 ```c
+#include<stdio.h>
 
+int main()
+{
+    int n, reverse=0;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    while(n>0)
+    {
+        reverse=reverse*10+(n%10);
+        n=n/10;
+    }
+    printf("The reverse Number is: %d", reverse);
+    return 0;
+}
 ```
 
 ### Task 5
 Write a program to print the numbers from 1 to 100 on the screen. Skip those numbers which are divisible by 3 or 5 but not by both. 
 
 ```c
+#include<stdio.h>
 
+int main()
+{
+    int i=1, n=100;
+    while(i<=n)
+    {
+        if(!((i%3==0 || i%5==0) && i%15!=0))
+        {
+            printf("%d ", i);
+        }
+        i++;
+    }
+
+    return 0;
+}
 ```

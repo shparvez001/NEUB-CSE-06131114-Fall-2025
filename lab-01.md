@@ -38,7 +38,7 @@ The upper-case equivalent is: A
 
 
 ## Solution
-## Task 1
+### Task 1
 Write a program which will print your name in one line and your id in another line.
 ```c
 #include<stdio.h>
@@ -51,7 +51,7 @@ int main()
 }
 ```
 
-## Task 2
+### Task 2
 Write a program to print the following pattern:
 ```c
 #include<stdio.h>
@@ -64,7 +64,7 @@ int main()
 ```
 
 
-## Task 3
+### Task 3
 Write a program that asks the user to enter two numbers, obtains the two numbers from the user and prints the sum, product, difference and quotient of the two numbers.
 ```c
 #include<stdio.h>
@@ -85,7 +85,7 @@ int main()
 ```
 
 
-## Task 4
+### Task 4
 Write a program that takes a lower-case letter from the user and convert it into an upper-case letter. 
 ```c
 #include<stdio.h>

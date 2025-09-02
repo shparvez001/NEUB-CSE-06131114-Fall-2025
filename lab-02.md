@@ -12,6 +12,7 @@ Enter 2 numbers: 51 65
 
 ## Task 2
 Write a program to print 100 to 1 with space in between them.
+
 _Sample Execution_
 ```
 100 99 98 97 96 95 94 93 92 91 90 89 88 87 86 85 84 83 82 81 
@@ -24,6 +25,7 @@ _Sample Execution_
 
 ## Task 3
 Write a program to add the digits of a number.
+
 _Sample Execution_
 ```
 Enter a number: 69837 
@@ -34,6 +36,7 @@ The sum of the digits of this number is: 33
 
 ## Task 4
 Write a program to reverse a number.
+
 _Sample Execution_
 ```
 Enter a number: 126584 

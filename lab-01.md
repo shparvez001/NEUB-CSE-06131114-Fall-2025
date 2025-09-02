@@ -5,6 +5,7 @@ Write a program which will print your name in one line and your id in another li
 
 ## Task 2
 Write a program to print the following pattern:
+
 _Sample Execution_
 ```
 * 
@@ -16,6 +17,7 @@ _Sample Execution_
 
 ## Task 3
 Write a program that asks the user to enter two numbers, obtains the two numbers from the user and prints the sum, product, difference and quotient of the two numbers.
+
 _Sample Execution_
 ```
 Enter 1st number: 25 
@@ -28,6 +30,7 @@ Quotient: 5
 
 ## Task 4
 Write a program that takes a lower-case letter from the user and convert it into an upper-case letter. 
+
 _Sample Execution_
 ```
 Sample Output: 

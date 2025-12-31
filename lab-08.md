@@ -35,7 +35,7 @@ Solve UVA [problem 458](https://onlinejudge.org/index.php?option=com_onlinejudge
 ## Solution
 ### Task 1
 
-````c
+```c
 #include <stdio.h>
 
 int str_len(char str[]);
@@ -119,5 +119,5 @@ void str_rev(char s[])
 		s[j] = temp;
 	}
 }
-````
+```
 

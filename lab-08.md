@@ -32,6 +32,92 @@ Reverses the contents of the array s.
 
 Solve UVA [problem 458](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=399). [[PDF](https://onlinejudge.org/external/4/458.pdf)] [[Submission link](https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=submit_problem&problemid=399&category=0)] 
 
+## Solution
+### Task 1
 
+````c
+#include <stdio.h>
 
+int str_len(char str[]);
+void str_cat(char dest[], char src[]);
+void str_cpy(char dest[], char src[]);
+int str_cmp(const char s1[], const char s2[]);
+void str_rev(char s[]);
+
+int main()
+{
+	char str[100] = "test string";
+	char s1[50] = "Bangla";
+	char s2[50] = "desh";
+	int len, comp;
+
+	len = str_len(str);
+	printf("Length of str: %d\n", len);
+
+	str_cat(s1, s2);
+	printf("s1 after concatenate: %s\n", s1);
+
+	comp = str_cmp(str, s1);
+	if(comp == 1) puts("str is greater than s1.");
+	else if(comp == -1) puts("s1 is greater than str.");
+	else puts("s1 and str are equal");
+
+	printf("s1 before reverse: %s\n", s1);
+	str_rev(s1);
+	printf("s1 after reverse: %s\n", s1);
+
+	return 0;
+}
+
+int str_len(char str[])
+{
+	int len;
+	for(len=0; str[len]; len++);
+	return len;
+}
+
+void str_cat(char dest[], char src[])
+{
+	int i, j;
+
+	for(i=0; dest[i]; i++);
+	for(j=0; src[j]; j++, i++)
+		dest[i] = src[j];
+	dest[i] = '\0';
+}
+
+void str_cpy(char dest[], char src[])
+{
+	int i;
+
+	for(i=0; src[i]; i++)
+		dest[i] = src[i];
+	dest[i] = '\0';
+}
+
+int str_cmp(const char s1[], const char s2[])
+{
+	int i;
+
+	for(i=0; s1[i] || s2[i]; i++)
+	{
+		if(s1[i] > s2[i]) return 1;
+		else if(s1[i] < s2[i]) return -1;
+	}
+	return 0;
+}
+
+void str_rev(char s[])
+{
+	int i, j;
+	char temp;
+
+	for(i=0, j=str_len(s)-1; i<j; i++,j--)
+	{
+		temp = s[i];
+		s[i] = s[j];
+		s[j] = temp;
+	}
+}
+````
 

@@ -19,10 +19,10 @@ Sum = 150
 
 ## Task 3
 Write a program that does the following things
-a. 	Ask user for n (number of integers).
-b.	Allocate memory dynamically using malloc().
-c.	Input and display values using pointers.
-d.	Free the memory.
+1. Ask user for n (number of integers).
+2. Allocate memory dynamically using malloc().
+3.	Input and display values using pointers.
+4.	Free the memory.
 
 
 _Sample Execution_

@@ -15,8 +15,6 @@ Sum of row 3: 19
 Sum of column 1: 17
 Sum of column 2: 16
 Sum of column 3: 14
-
-
 ```
 
 ## Task 2
@@ -33,7 +31,6 @@ Transpose matrix:
         8       6       0
         0       3       5
         5       6       5
-
 ```
 
 
